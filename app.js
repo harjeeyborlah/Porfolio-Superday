@@ -37,3 +37,23 @@
   PageTransitions();
 
 
+
+
+  // Show the scroll-to-top button when the user scrolls down
+window.addEventListener('scroll', function() {
+  var scrollToTop = document.querySelector('.scroll-to-top');
+  if (window.pageYOffset > 100) {
+    scrollToTop.style.display = 'block';
+  } else {
+    scrollToTop.style.display = 'none';
+  }
+});
+
+// Smoothly scroll back to the top of the page when the user clicks the scroll-to-top button
+document.querySelector('.scroll-to-top a').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
