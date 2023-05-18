@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +62,7 @@ section {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -175,7 +177,7 @@ header {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  min-height: 100vh;
   .left-header {
     display: flex;
     align-items: center;
@@ -671,6 +673,7 @@ header {
   bottom: 20px;
   right: 20px;
   display: none;
+  z-index: 9999;
 }
 
 .scroll-to-top a {
@@ -693,3 +696,6 @@ header {
   background-color: var(--color-secondary);
   color: var(--color-black);
 }
+
+
+@import './media';
