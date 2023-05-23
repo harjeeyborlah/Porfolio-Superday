@@ -688,6 +688,9 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+  .contact-content-con {
+    margin-bottom: 3.5rem;
+  }
   .about-container {
     grid-template-columns: 1fr;
   }

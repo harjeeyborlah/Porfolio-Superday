@@ -3,6 +3,7 @@ const sectBtns = document.querySelectorAll(".controls");
 const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 
+
 function PageTransitions() {
   //button click active class
   for (let i = 0; i < sectBtn.length; i++) {
@@ -62,6 +63,19 @@ function PageTransitions() {
     let element = document.body;
     element.classList.toggle("light-mode");
   });
+  
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var scrollpos = localStorage.getItem("scrollpos");
+    if (scrollpos) window.scrollTo(0, scrollpos);
+  });
+
+  window.onscroll = function (e) {
+    localStorage.setItem("scrollpos", window.scrollY);
+  };
+  
 }
+
+
 
 PageTransitions();
