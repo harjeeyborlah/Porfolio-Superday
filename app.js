@@ -64,15 +64,6 @@ function PageTransitions() {
     element.classList.toggle("light-mode");
   });
   
-
-  document.addEventListener("DOMContentLoaded", function (event) {
-    var scrollpos = localStorage.getItem("scrollpos");
-    if (scrollpos) window.scrollTo(0, scrollpos);
-  });
-
-  window.onscroll = function (e) {
-    localStorage.setItem("scrollpos", window.scrollY);
-  };
   
 }
 
