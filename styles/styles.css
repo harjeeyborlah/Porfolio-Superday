@@ -687,7 +687,7 @@ header {
   color: var(--color-black);
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 750px) {
   .contact-content-con {
     margin-bottom: 3.5rem;
   }
