@@ -687,7 +687,7 @@ header {
   color: var(--color-black);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 630px) {
   .contact-content-con {
     margin-bottom: 3.5rem;
   }
@@ -708,21 +708,8 @@ header {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
-  .portfolios {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
   .section {
     padding: 2rem 2.5rem;
-  }
-  .main-title h2 {
-    font-size: 2rem;
-  }
-  .main-title h2 span {
-    font-size: 2.5rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 1164px) {
@@ -815,12 +802,28 @@ header {
 }
 @media screen and (max-width: 700px) {
   .section {
-    padding: 7rem 3rem;
+    padding: 7rem 1.9rem;
   }
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
   }
   .main-title h2 {
     font-size: 3rem;
+  }
+  .contact-info {
+    font-size: 1rem;
+  }
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title h2 span {
+    font-size: 3.5rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 3.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
